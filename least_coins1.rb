@@ -3,13 +3,10 @@
 def least_coins(cents)
   change ={}
 
-  # determines the number of quarters that go into cents
   quarters = cents/25
-  #determines how much is left over AFTER the quarters are removed
   rem=cents%25
-  #adds the key/value pair for quarters
   change[:quarters] = quarters
-
+  
   dimes = rem/10
   rem = rem%10
   change[:dimes] = dimes
