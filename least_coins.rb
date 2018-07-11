@@ -7,6 +7,10 @@ def least(coin_values, change, known_results)
   else
     while i < change
       numcoins = 1 + least(coin_values,change-i, known_results)
+      if numcoins < mincoins
+        mincoins = numcoins
+        known_results[change] = mincoins
+      end
     end
   end
 end
