@@ -3,6 +3,7 @@ def least(coin_values, change, known_results)
   puts mincoins
   if coin_values.include?(change) == true
     known_results[change]=1
+    binding.pry
   elsif known_results[change] > 0
     puts 'yo'
     puts known_results
