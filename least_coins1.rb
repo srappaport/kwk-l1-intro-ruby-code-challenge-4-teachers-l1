@@ -6,7 +6,7 @@ def least_coins(cents)
   quarters = cents/25
   rem=cents%25
   change[:quarters] = quarters
-  
+
   dimes = rem/10
   rem = rem%10
   change[:dimes] = dimes
