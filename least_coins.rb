@@ -2,9 +2,9 @@ def least(coin_values, change, known_results)
   mincoins = change
   puts mincoins
   if coin_values.include?(change) == true
-    puts 'yo'
     known_results[change]=1
   elsif known_results[change] > 0
+    puts 'yo'
     puts known_results
   else
     while i < change
