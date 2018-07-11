@@ -17,4 +17,4 @@ def least(coin_values, change, known_results)
   end
 end
 
-least([1,3,4],6,[0]*5)
+least([1,3,4],6,[0]*7)
