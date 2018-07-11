@@ -15,7 +15,6 @@ def least(coin_values, change, known_results)
         known_results[change] = mincoins
         i +=1
       end
-      break
     end
   end
 end
