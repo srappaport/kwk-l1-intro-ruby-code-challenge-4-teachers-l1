@@ -7,6 +7,7 @@ def least(coin_values, change, known_results)
     puts 'yo'
     puts known_results
   else
+    i = 0
     while i < change
       numcoins = 1 + least(coin_values,change-i, known_results)
       if numcoins < mincoins
