@@ -2,7 +2,7 @@ def least(coin_values, change, known_results)
   mincoins = change
   if coin_values.include?(change) == true
     known_results[change]=1
-  elsif known_results[change] >0
+  elsif known_results[change] > 0
     puts known_results
   else
     while i < change
