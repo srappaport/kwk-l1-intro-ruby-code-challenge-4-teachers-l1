@@ -6,6 +6,7 @@ def least(coin_values, change, known_results)
   elsif known_results[change] > 0
     puts 'yo'
     puts known_results
+    binding.pry
   else
     i = 0
     while i < change
