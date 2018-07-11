@@ -12,6 +12,7 @@ def least(coin_values, change, known_results)
     i = 0
     while i < change
       numcoins = 1 + least(coin_values,change-i, known_results)
+      binding.pry
       if numcoins < mincoins
         mincoins = numcoins
         known_results[change] = mincoins
