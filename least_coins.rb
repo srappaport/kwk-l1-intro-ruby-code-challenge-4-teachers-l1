@@ -13,6 +13,7 @@ def least(coin_values, change, known_results)
       if numcoins < mincoins
         mincoins = numcoins
         known_results[change] = mincoins
+        i +=1
       end
     end
   end
